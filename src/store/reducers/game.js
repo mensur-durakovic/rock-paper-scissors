@@ -45,7 +45,7 @@ const setPlayerChoiceHandler = (state, playerPick) => {
   if (outcome === PLAYER) {
     score = score + 1;
   } else if (outcome === COMPUTER) {
-    score = score > 0 ? score - 1 : 0;
+    score = score - 1;
   }
   console.log({ computerPick, playerPick, outcome, score });
   return { computerPick, playerPick, outcome, score };
